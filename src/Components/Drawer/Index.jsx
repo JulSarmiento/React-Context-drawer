@@ -20,6 +20,7 @@ export default function Drawer() {
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title className='drawer-title'>Lista de Compras</Offcanvas.Title>
+          <FontAwesomeIcon icon="fa-solid fa-basket-shopping" />
         </Offcanvas.Header>
         <Offcanvas.Body>
 
