@@ -1,0 +1,91 @@
+.body {
+  width: 100%;
+  height: 70vh;
+  padding: 0 10%;
+  display: grid;
+  place-content: center;
+
+}
+
+.body .body-title-container{
+  margin-top: -10px;
+  margin-bottom: 50px;
+}
+
+.body .body-title-container h1{
+  margin-bottom: 10px;
+  color: rgb(50, 162, 182);
+  font-size: 40px;
+}
+
+.body .body-title-container p{
+  font-size: 12px;
+  font-style: italic;
+  padding-left: 5px;
+}
+
+.body .form-container {
+  box-shadow: 2px 2px 15px 5px rgba(194,236,255,0.55);
+  border-radius: 10px;
+  width: 500px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.body .form-container .input-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.body .form-container .input-container, .btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.body .form-container .input-container input{
+  border-radius: 10px;
+  background-color: #acd8f0a1;
+  border: none;
+  height: 30px;
+  margin-top: 10px;
+  outline: none;
+}
+
+.body .form-container .input-container input[placeholder]{
+  padding: 20px;
+}
+
+.body .form-container .input-container select {
+  border-radius: 10px;
+  background-color: #acd8f0a1;
+  border: none;
+  padding: 20px;
+  height: 30px;
+  margin-top: 10px;
+  outline: none;
+}
+
+.body .form-container .btn-container {
+  padding: 20px;
+}
+
+.body .form-container .btn-container button {
+  width: 200px;
+  padding: 5px;
+  height: 35px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: rgb(50, 162, 182);
+  color: white;
+  transition: 1s;
+}
+
+.body .form-container .btn-container button:hover {
+  background-color: white;
+  color: rgb(50, 162, 182);
+}

@@ -1,0 +1,13 @@
+.drawer-btn {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background-color: rgb(50, 162, 182);
+  color: white;
+  transition: 1s;
+}
+
+.drawer-btn:hover {
+  background-color: white;
+  color: rgb(50, 162, 182);
+}
