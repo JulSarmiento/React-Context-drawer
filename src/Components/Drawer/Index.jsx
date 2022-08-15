@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import ProductList from '../../Contexts/ProductList';
 
 import './index.css'
 
 export default function Drawer() {
 
+  const [products] = useContext(ProductList);
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -20,14 +22,18 @@ export default function Drawer() {
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title className='drawer-title'>Lista de Compras</Offcanvas.Title>
-          <FontAwesomeIcon icon="fa-solid fa-basket-shopping" />
+          <span className="material-symbols-outlined">
+          shopping_basket
+          </span>
         </Offcanvas.Header>
         <Offcanvas.Body>
 
           {/* Product List */}
-          <p className="mb-0">
-            Lista vacia.
-          </p>
+          <ul>
+            {products.map((product) => {
+              return <li key={product.length}><strong>{product.productName}</strong><p>{product.productQnty}</p> <p>{product.category}</p></li>
+            })}
+          </ul>
 
         </Offcanvas.Body>
       </Offcanvas>

@@ -53,9 +53,6 @@
   height: 30px;
   margin-top: 10px;
   outline: none;
-}
-
-.body .form-container .input-container input[placeholder]{
   padding: 20px;
 }
 
@@ -67,6 +64,21 @@
   height: 30px;
   margin-top: 10px;
   outline: none;
+}
+
+.body .form-container .select-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.body .form-container .select-container select {
+  border-radius: 10px;
+  background-color: #acd8f0a1;
+  border: none;
+  outline: none;
+  height: 40px;
+  padding-left: 10px;
 }
 
 .body .form-container .btn-container {
