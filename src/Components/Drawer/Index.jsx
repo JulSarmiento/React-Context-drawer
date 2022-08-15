@@ -13,6 +13,10 @@ export default function Drawer() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+
+
+  //Pendiente clasificar los productos por la categoria
+
   return(
     <div>
       <Button className='drawer-btn' onClick={handleShow}>
