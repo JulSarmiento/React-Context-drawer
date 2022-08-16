@@ -11,3 +11,28 @@
   background-color: white;
   color: rgb(50, 162, 182);
 }
+
+/* .category-box {
+  margin: 10px;
+} */
+
+.category-box h2 {
+  font-size: 20px;
+  background-color: #acd8f0;
+  padding: 5px;
+  color: white;
+}
+
+.category-box ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+}
+
+.category-box ul li {
+  display: flex;
+  justify-content: space-between;
+}
+
